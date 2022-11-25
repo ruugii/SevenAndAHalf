@@ -1,0 +1,9 @@
+.root {
+   -fx-background-image: url("../images/loginBackground.jpg")
+}
+.label{
+           -fx-font-family: "Arial Black";
+        }
+.button {
+   -fx-font-family: "Arial Black";
+}

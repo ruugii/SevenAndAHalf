@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="287.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.LoginController">
+   <children>
+      <TextFlow layoutX="-1.0" prefHeight="41.0" prefWidth="294.0" textAlignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO" wrappingWidth="203.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <TextFlow layoutY="41.0" prefHeight="28.0" prefWidth="294.0" textAlignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SEVEN AND A HALF GAME" wrappingWidth="203.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <ImageView fitHeight="215.0" fitWidth="173.0" layoutX="76.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/1_CLUBS.png" />
+         </image></ImageView>
+      <TextFlow layoutY="284.0" prefHeight="22.0" prefWidth="294.0" textAlignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PLEASE, ENTER YOUR NAME" wrappingWidth="203.0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <TextArea fx:id="userField" layoutX="35.0" layoutY="306.0" prefHeight="38.0" prefWidth="223.0" />
+      <Button layoutX="106.0" layoutY="351.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction" text="SIGN IN">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorText" layoutY="394.0" prefHeight="17.0" prefWidth="287.0" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="417.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.gameController">
+    <center>
+        
+
+    </center>
+    <stylesheets>
+        <URL value="@../css/fight.css" />
+    </stylesheets>
+   <left>
+      <VBox prefHeight="222.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="421.0" prefWidth="200.0">
+               <children>
+                  <GridPane layoutX="14.0" layoutY="14.0" prefHeight="173.0" prefWidth="373.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="173.0" minWidth="10.0" prefWidth="145.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="10.0" prefWidth="211.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="74.0" minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="158.0" minHeight="5.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="215.0" minHeight="7.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="243.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextFlow prefHeight="44.0" prefWidth="145.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NAME" wrappingWidth="59.6484375">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font></Text>
+                           </children>
+                        </TextFlow>
+                        <TextFlow layoutX="10.0" layoutY="10.0" prefHeight="54.0" prefWidth="165.0" GridPane.rowIndex="1">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYED GAMES" wrappingWidth="123.189453125">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </TextFlow>
+                        <TextFlow prefHeight="215.0" prefWidth="244.0" GridPane.rowIndex="2">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="WON GAMES">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font></Text>
+                           </children>
+                        </TextFlow>
+                        <TextFlow layoutX="10.0" layoutY="136.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="LOST GAMES">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font></Text>
+                           </children>
+                        </TextFlow>
+                        <TextFlow layoutX="10.0" layoutY="10.0" prefHeight="44.0" prefWidth="145.0" GridPane.columnIndex="1">
+                           <children>
+                              <Text fx:id="name" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="59.6484375">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </TextFlow>
+                        <TextFlow layoutX="10.0" layoutY="54.0" prefHeight="158.0" prefWidth="217.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <Text fx:id="PlayGames" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="165.189453125">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </TextFlow>
+                        <TextFlow layoutX="10.0" layoutY="97.0" prefHeight="43.0" prefWidth="182.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <Text fx:id="WinGames" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </TextFlow>
+                        <TextFlow layoutX="10.0" layoutY="140.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <children>
+                              <Text fx:id="LostGames" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </TextFlow>
+                     </children>
+                  </GridPane>
+                  <AnchorPane fx:id="Bnk_img_container" layoutY="228.0" prefHeight="145.0" prefWidth="373.0">
+                     <children>
+                        <ImageView fx:id="bankImg" fitHeight="150.0" fitWidth="129.0" layoutX="73.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="bankImg1" fitHeight="150.0" fitWidth="129.0" layoutX="97.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="bankImg2" fitHeight="150.0" fitWidth="129.0" layoutX="123.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="bankImg3" fitHeight="150.0" fitWidth="129.0" layoutX="152.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="bankImg4" fitHeight="150.0" fitWidth="129.0" layoutX="180.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="bankImg5" fitHeight="150.0" fitWidth="129.0" layoutX="209.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="bankImg6" fitHeight="150.0" fitWidth="129.0" layoutX="236.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="bankImg7" fitHeight="150.0" fitWidth="129.0" layoutX="259.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="errorText_combat" layoutX="373.0" layoutY="30.0" />
+                  <AnchorPane fx:id="Bnk_img_container2" layoutX="343.0" layoutY="3.0" prefHeight="145.0" prefWidth="373.0">
+                     <children>
+                        <ImageView fx:id="PlayerImg" fitHeight="150.0" fitWidth="129.0" layoutX="73.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="PlayerImg1" fitHeight="150.0" fitWidth="129.0" layoutX="97.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="PlayerImg2" fitHeight="150.0" fitWidth="129.0" layoutX="123.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="PlayerImg3" fitHeight="150.0" fitWidth="129.0" layoutX="152.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="PlayerImg4" fitHeight="150.0" fitWidth="129.0" layoutX="180.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="PlayerImg5" fitHeight="150.0" fitWidth="129.0" layoutX="209.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="PlayerImg6" fitHeight="150.0" fitWidth="129.0" layoutX="236.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="PlayerImg7" fitHeight="150.0" fitWidth="129.0" layoutX="259.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="Bnk_img_container1" layoutX="10.0" layoutY="238.0" prefHeight="145.0" prefWidth="373.0">
+                     <children>
+                        <ImageView fx:id="bankImg1" fitHeight="150.0" fitWidth="129.0" layoutX="73.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="bankImg11" fitHeight="150.0" fitWidth="129.0" layoutX="97.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="bankImg21" fitHeight="150.0" fitWidth="129.0" layoutX="123.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="bankImg31" fitHeight="150.0" fitWidth="129.0" layoutX="152.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="bankImg41" fitHeight="150.0" fitWidth="129.0" layoutX="180.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="bankImg51" fitHeight="150.0" fitWidth="129.0" layoutX="209.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="bankImg61" fitHeight="150.0" fitWidth="129.0" layoutX="236.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="bankImg71" fitHeight="150.0" fitWidth="129.0" layoutX="259.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </AnchorPane>
+                  <Text fx:id="result" layoutX="204.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <TextFlow prefHeight="44.0" prefWidth="449.0" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="28.0" prefWidth="734.0">
+               <children>
+                  <Button fx:id="ChangePlayer" layoutY="-1.0" mnemonicParsing="false" onAction="#ChangeScene" prefHeight="25.0" prefWidth="140.0" text="CHANGE PLAYER" />
+                  <Text fx:id="player" layoutX="157.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="272.50390625">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="TryAgain" layoutX="643.0" layoutY="2.0" mnemonicParsing="false" onAction="#TryAgain" text="TRY AGAIN" />
+               </children>
+            </AnchorPane>
+         </children>
+      </TextFlow>
+   </top>
+   <bottom>
+      <TextFlow prefHeight="44.0" prefWidth="145.0" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="34.0" prefWidth="599.0">
+               <children>
+                  <Button fx:id="standbtn" layoutX="6.0" layoutY="1.0" mnemonicParsing="false" onAction="#Stand" prefHeight="32.0" prefWidth="92.0" text="STAND" />
+                  <Text fx:id="bank" layoutX="270.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="59.6484375">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="OneCardbtn" layoutX="507.0" layoutY="-2.0" mnemonicParsing="false" onAction="#OneMoreCardClick" prefHeight="32.0" prefWidth="92.0" text="+1 CARD" />
+               </children>
+            </AnchorPane>
+         </children>
+      </TextFlow>
+   </bottom>
+</BorderPane>
